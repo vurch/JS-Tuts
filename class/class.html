@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        /*  
+            Class and Constructor Function Performs The same functions
+            JavaScript Classes are templates for JavaScript Objects.
+            Use the keyword class to create a class.
+            Always add a method named constructor():
+        */
+        class Person {
+            constructor(firstName, lastName, dob){
+                this.firstName = firstName;
+                this.lastName = lastName
+                this.dob = new Date(dob);
+            }
+            getBirthYear(){
+                return this.dob.getFullYear();
+            }
+
+            getFullName(){
+                return `${this.firstName} ${this.lastName} `;
+            }
+        }
+
+        const person1 = new Person ('Sam','Bello','10-30-1980');
+        console.log(person1);
+
+    </script>
+</body>
+</html>

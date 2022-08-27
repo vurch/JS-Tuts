@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="myFunction()">submit</button>
+    <p id="demo"></p>
+
+    <script>
+
+        //The while loop loops through a block of code as long as a specified condition is true.
+
+        var i = 0;
+        var text = "";
+
+        function myFunction(){
+            while (i < 10) {
+                text += "This number is " + i +"<br>";
+                i++;
+            }
+            document.getElementById('demo').innerHTML = text;
+
+        }
+
+       
+    </script>
+</body>
+</html>

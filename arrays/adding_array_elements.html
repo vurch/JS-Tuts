@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        /* 
+        - The easiest way to add a new element to an array is using the push method:
+        - New element can also be added to an array using the length property:
+        - Adding elements with high indexes can create "undefined" holes in an array:
+        */
+        var fruits = ["Banana","Orange","Apple","Mango"];
+        // adds a new element (Lemon) to fruits     
+        fruits.push("Lemon"); 
+        console.log(fruits);
+
+
+
+
+        var cars = ["Volvo", "Lexus", "Bentley"]
+        // adds a new element (Rangerover) to Cars with the length Property
+        cars[cars.length] = "Rangerover"
+        console.log(cars);
+
+
+
+        var laptops = ["Toshiba","Lenovo","Dell"]
+        laptops[10] = "HP"; 
+
+        console.log(laptops);
+
+
+    </script>
+</body>
+</html>

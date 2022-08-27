@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        /*
+            A constructor function is used to create multiple objects.
+            It is considered a good practice to capitalize the first letter of your constructor function
+
+        */
+
+        //Constructor Function
+        function Person(firstName, lastName, dob){
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.dob = new Date(dob);
+
+            this.getBirthYear = function(){
+                return this.dob.getFullYear();
+            }
+
+            this.getFullName = function (){
+                return `${this.firstName} ${this.lastName}`
+            }
+
+        }
+
+        const person1 = new Person('Sam','Bello','12-2-2001');
+        const person2 = new Person('Teejay','Bello','12-2-2004');
+
+        console.log(person1.getBirthYear());
+    </script>
+</body>
+</html>

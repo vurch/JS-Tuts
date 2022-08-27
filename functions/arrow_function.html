@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+     
+       var arrowFunction1;
+       var arrowFunction2;
+       var arrowFunction3;
+
+
+       // 1. Remove the word "function" and place arrow between the argument and opening body bracket
+       arrowFunction1 = (x) => {
+            return x * 100;
+        };
+        console.log(arrowFunction1(3));
+
+
+        // 2. Remove the body braces and word "return" — the return is implied.
+        arrowFunction2 = (x) => x * 100;
+        console.log(arrowFunction2(5));
+
+
+        // 3. Remove the argument parentheses
+        arrowFunction3 = x => x * 100;
+        console.log(arrowFunction3(10));
+
+
+    </script>
+</body>
+</html>
