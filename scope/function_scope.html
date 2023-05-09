@@ -10,24 +10,16 @@
     
 
     <script>
-
-        // If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.
-
-        // code here can use carName
-
         
-
-        function myFunction() {
-            carName = "Volvo";
-
-            // code here can use carName
+        // Variables defined inside a function can only be accessible inside the function
+        
+        function cars() {
+            var carName = "Volvo";
+            console.log(carName)
         }
-
-        myFunction();
-
+        
+        cars();
         console.log(carName)
-
-       
     </script>
 </body>
 </html>

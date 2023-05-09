@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+    
+    <script>
+        
+        /*
+        Classes also allows you to use getters and setters.
+        It can be smart to use getters and setters for your properties, especially if you want to do something special with the value before returning them, or before you set them.
+        To add getters and setters in the class, use the get and set keywords.
+        Even if the getter is a method, you do not use parentheses when you want to get the property value.
+        */
+       class Car {
+            constructor(brand) {
+                this.carname = brand;
+            }
+            get cnam() {
+                return this.carname;
+            }
+            set cnam(x) {
+                this.carname = x;
+            }
+        }
+
+        let myCar = new Car("Ford");
+        //Getter
+        let getProperty = myCar.cnam;
+        //Setter
+        let setProperty = myCar.cnam = 'Toyota';
+
+        console.log(setProperty)
+     </script>
+</body>
+</html>

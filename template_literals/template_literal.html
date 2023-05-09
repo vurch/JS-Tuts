@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literal</title>
+</head>
+<body>
+    <script>
+        /*
+            Template literals provide an easy way to interpolate variables and expressions into strings.
+            The method is called string interpolation.
+            The syntax is:${...}
+        */
+
+        //Variable subtitution
+        let firstName = "Sam";
+        let lastName = "Bello";
+
+        //Template literal allows variable in strings.
+        let fullName = `Welcome ${firstName}, ${lastName}!`;
+
+        console.log(fullName);
+
+
+        //Expression subtitution
+        let price = 10;
+        const VAT = 0.25;
+
+        //Template literal allows expression in strings.
+        let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
+        console.log(total);
+
+    </script>
+    
+</body>
+</html>

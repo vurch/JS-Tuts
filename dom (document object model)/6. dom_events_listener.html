@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events Listener</title>
+</head>
+<body>
+
+    <button id="btn">Display Text</button>
+    
+</body>
+    
+
+    <script>
+
+        /*
+        addEventListener() is a method in JavaScript that allows you to attach an event listener to a specified element. It is a more flexible and powerful way to handle events than using the traditional HTML event attributes such as onclick and onload.
+
+        The addEventListener() method takes two arguments: the type of the event you want to listen for, and the function that should be executed when the event occurs. The syntax for addEventListener() is as follows:
+        */
+        
+        let btn = document.getElementById('btn');
+        let body = document.getElementsByTagName('body');
+
+        btn.addEventListener('click', displayText);
+
+        function displayText(){
+
+            let para = document.createElement("p");
+            let textNode = document.createTextNode("Yeah, the addeventlistener method is working");
+            para.appendChild(textNode);
+            body[0].insertBefore(para, btn)
+
+            
+            console.log('Yeah, the addeventlistener method is working')
+        }
+
+
+        /*
+            removeEventListener() is a method in JavaScript that allows you to remove an event listener that was previously attached to an element using the addEventListener() method. This method is useful when you no longer want an event listener to be active on an elemen
+
+        */
+
+        // btn.removeEventListener('click', displayText);
+
+
+
+    </script>
+</html>

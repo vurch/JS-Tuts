@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+
+    <!-- To execute code when a user clicks on an element, add JavaScript code to an HTML event attribute: -->
+    <h1 onmouseover="changeText(this)">Click on this text!</h1>
+    <h2 onclick="this.innerHTML='Good the onclick event is working!'">Click on this text!</h2>
+
+    <script>
+
+        /*
+            DOM Events allows JavaScript to react to HTML elements from html attributes
+
+            Examples of DOM Events:
+            Mouse Events
+            Keyboard Events
+            Touch Events
+            Focus Events
+            Form Events
+            Windows Events
+            Media Events
+
+
+         */
+        
+        function changeText(id){
+            id.innerHTML = "<div style=\" background-color: green; color: white\">Good the onmouseover event is working!</div>";
+        }
+
+    </script>
+</body>
+</html>

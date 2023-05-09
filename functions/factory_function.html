@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <script>
+
+        //A factory function creates an object and returns it
+        function createPerson(firstName, lastName) {
+            return {
+                firstName: firstName,
+                lastName: lastName,
+                getFullName() {
+                return firstName + ' ' + lastName;
+                },
+            };
+        }
+
+        let person1 = createPerson('John', 'Doe');
+        let person2 = createPerson('Sam', 'Bello');
+        let person3 = createPerson('Teejay', 'Bello');
+
+        console.log(person1.firstName);
+        console.log(person2.getFullName());
+
+    </script>
+    
+</body>
+</html>

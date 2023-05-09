@@ -9,15 +9,17 @@
 <body>
 
     <h2>JavaScript Variables</h2>
-    <p>In this example, x, y, and z are variables.</p>
-    <p id="demo"></p>
+    <p>In this example, firstValue, secondValue, and result are variables.</p>
+    <p id="result"></p>
     
     <script>
-        let x = 5;
-        let y = 6;
-        let z = x + y;
-        document.getElementById("demo").innerHTML =
-        "The value of z is: " + z;
+        //Let can not be redclared but can be updated
+        let firstValue = 100;
+        let secondValue = 50;
+        secondValue = 80;
+        let result = firstValue + secondValue;
+        document.getElementById("result").innerHTML =
+        "The value of result is: " + result;
     </script>
 </body>
 </html>

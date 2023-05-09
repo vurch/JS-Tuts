@@ -7,8 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="myFunction()">Try it</button>
-    <p id="demo"></p>
 
     <script>
         /* Use the switch statement to select one of many blocks of code to be executed.
@@ -27,7 +25,10 @@
             There is no need for more testing.
         */
 
-        var day;
+        const today = new Date().getDay();
+        console.log(today);
+
+        let day;
         switch (new Date().getDay()) {
             case 0:
                 day = "Sunday";
@@ -52,7 +53,7 @@
                 break;
         }
 
-        document.getElementById("demo").innerHTML = "Today is " + day;
+        console.log("Today is " + day);
 
     </script>
 </body>

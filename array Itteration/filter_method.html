@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Methods</title>
+</head>
+<body>
+
+    <script>
+
+        //The filter() method creates a new array with array elements that pass a test.
+
+        //Filtering out all strings with length less than or equal to 5.
+        let words = ["apple", "banana", "cherry", "durian", "elderberry", "fig"];
+
+        let shortWords = words.filter(function(word) {
+            return word.length <= 5;
+        });
+
+        console.log(shortWords); 
+
+    </script>
+    
+</body>
+</html>

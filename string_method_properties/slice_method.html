@@ -9,14 +9,16 @@
 <body>
     
     <script>
+
         //The method takes 2 parameters: the starting index (position), and the ending index (position)(last index is not included for the ending index).
         var str = "Apple, Banana, Kiwi";
-        var res = str.slice(7,13);
+        var res = str.slice(0,13);
         
         console.log(res);
 
         //or can be done using a negative parameter
         //If a parameter is negative, the position is counted from the end of the string.
+        //(last index is included for the negative ending index).
 
         var str2 = "Apple, Banana, Kiwi";
         var res2 = str2.slice(-12,-6);

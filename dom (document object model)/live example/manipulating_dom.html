@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>JS For Beginners</h1>
+      </header>
+  
+      <section class="container">
+        <form id="my-form">
+          <h1>Add User</h1>
+          <div class="msg"></div>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+          </div>
+          <input class="btn" type="submit" value="Submit">
+        </form>
+  
+        <ul id="users"></ul>
+  
+        <ul class="items">
+          <li class="item">Item 1</li>
+          <li class="item">Item 2</li>
+          <li class="item">Item 3</li>
+        </ul>
+      </section>
+
+
+    <script>
+
+        //The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+        const ul = document.querySelector('.items')
+        // const ul = document.querySelectorAll('.items')
+        // ul.remove();
+        // ul.lastElementChild.remove();
+        // ul.firstElementChild.textContent = 'Hello World';
+        // ul.children[1].innerHTML = 'Sam Bello';
+        // ul.lastElementChild.innerHTML = '<h1>Hello</h1>';
+
+        let btn = document.querySelector('.btn');
+        let name = document.getElementById('name');
+        let email = document.getElementById('email');
+        let errormsg = document.querySelector('.msg');
+        
+        
+        btn.addEventListener('click', (e) =>{
+            e.preventDefault();
+            // document.querySelector('#my-form').style.background = '#000';
+
+            if(name.value == "" || email.value == ""){
+              errormsg.style.display = "block";
+              errormsg.innerHTML = "Please fill in the form below"
+              errormsg.style.background = "red";
+              errormsg.style.color = "white";
+            }
+            else{
+              errormsg.style.display = "none";
+            }
+           
+            
+        })
+
+
+
+    </script>
+</body>
+</html>

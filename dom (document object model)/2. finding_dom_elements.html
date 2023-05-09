@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Elements</title>
+</head>
+<body>
+    <p id="first-paragraph"></p>
+    <div></div>
+    <div class="article">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati architecto maiores, magnam fugiat velit dignissimos et at est in tempore itaque sit quis non fuga assumenda facilis expedita voluptates cupiditate.
+    </div>
+    <p class="second-paragraph"></p>
+    <form action=""></form>
+    
+    <script>
+
+        //DOM Element represents an HTML element like P, DIV, A, TABLE 
+
+        //Finding HTML Elements by Id (single element).
+        var elementOne = document.getElementById("first-paragraph");
+        elementOne.innerHTML = "First Paragraph element has been found and edited using javascript";
+
+        //Finding HTML Elements by Id (single element).
+        var elementOne = document.querySelector("#first-paragraph");
+        elementOne.innerHTML = "First Paragraph element has been found and edited using javascript.";
+
+        //Finding HTML Elements by Tag Name (multiple element)
+        let elementTwo = document.getElementsByTagName("div");
+        elementTwo[0].innerHTML = "Div element has been found and edited using javascript";
+        // console.log(elementTwo);
+
+        //Finding HTML Elements by Class Name (multiple element)
+        let elementThree = document.getElementsByClassName("article");
+        elementThree[0].innerHTML = "Div element for Article class has been found and edited using javascript";
+
+        //Finding Elements by QuerySelector
+        const elementFour = document.querySelectorAll(".second-paragraph");
+        elementFour[0].innerHTML = "Div element for second-paragraph has been found and edited using javascript";
+
+        let elementFive = document.forms;
+        elementFive[0].innerHTML = "<input type=\"text\">";
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 // ATTENTION: THIS IS CODE FROM THE YOUTUBE CRASH COURSE. IT IS NOT MEANT TO RUN, IT IS JUST FOR LEARNING PURPOSES //
 
 // LOGGING OUTPUT
@@ -47,6 +48,7 @@ val = s.substring(0, 5);
 // Split into array
 val = s.split('');
 
+  
 
 
 // ARRAYS - Store multiple values in a variable
@@ -140,7 +142,7 @@ while(i <= 10) {
   console.log(`While Loop Number: ${i}`);
   i++;
 }
-
+ 
 // Loop Through Arrays
 // For Loop
 for(let i = 0; i < todos.length; i++){
@@ -158,7 +160,7 @@ for(let todo of todos) {
 // forEach() - Loops through array
 todos.forEach(function(todo, i, myTodos) {
   console.log(`${i + 1}: ${todo.text}`);
-  console.log(myTodos);
+  // console.log(myTodos);
 });
 
 // map() - Loop through and create new array
@@ -166,7 +168,7 @@ const todoTextArray = todos.map(function(todo) {
   return todo.text;
 });
 
-console.log(todoTextArray);
+console.log(todoTextArray);trr
 
 // filter() - Returns array based on condition
 const todo1 = todos.filter(function(todo) {
@@ -189,13 +191,17 @@ if(x === 10) {
 }
 
 // Switch
-color = 'blue';
+const color = 'blue';
 
 switch(color) {
   case 'red':
     console.log('color is red');
+    break
+
   case 'blue':
     console.log('color is blue');
+    break
+
   default:  
     console.log('color is not red or blue')
 }
@@ -230,12 +236,13 @@ function Person(firstName, lastName, dob) {
   this.firstName = firstName;
   this.lastName = lastName;
   this.dob = new Date(dob); // Set to actual date object using Date constructor
-  // this.getBirthYear = function(){
-  //   return this.dob.getFullYear();
-  // }
-  // this.getFullName = function() {
-  //   return `${this.firstName} ${this.lastName}`
-  // }
+  
+  this.getBirthYear = function(){
+    return this.dob.getFullYear();
+  }
+  this.getFullName = function() {
+    return `${this.firstName} ${this.lastName}`
+  }
 }
 
 // Get Birth Year
@@ -250,10 +257,10 @@ Person.prototype.getFullName = function() {
 
 
 // Instantiate an object from the class
-const person1 = new Person('John', 'Doe', '7-8-80');
+const person1 = new Person('John', 'Doe', '7-8-1880');
 const person2 = new Person('Steve', 'Smith', '8-2-90');
 
-console.log(person2);
+console.log(person1);
 
 // console.log(person1.getBirthYear());
 // console.log(person1.getFullName());

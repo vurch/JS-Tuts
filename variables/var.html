@@ -8,15 +8,17 @@
 </head>
 <body>
     <h1>JavaScript Variables</h1>
-    <p>In this example, x, y, and z are variables.</p>
-    <p id="demo"></p>
+    <p>In this example, firstValue, secondValue, and result are variables.</p>
+    <p id="result"></p>
 
     <script>
-        var x = 5;
-        var y = 6;
-        var z = x + y;
 
-        document.getElementById("demo").innerHTML = "The value of z is " + z;
+        // Var can be redeclared and updated
+        var firstValue = 100;
+        var secondValue = 50;
+        var result = firstValue + secondValue;
+
+        document.getElementById("result").innerHTML = "The value of result is " + result;
 
     </script>
     

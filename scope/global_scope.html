@@ -12,16 +12,15 @@
     <script>
 
         //A global variable has global scope: All scripts and functions on a web page can access it. 
+        let carName = "Volvo";
 
-        var carName = " Volvo";
-
-        // code here can use carName
-
-        function myFunction() {
-
-            // code here can use carName
-
+        function cars() {
+            return carName;
         }
+
+        console.log(cars());
+        console.log(carName);
+
     </script>
 </body>
 </html>

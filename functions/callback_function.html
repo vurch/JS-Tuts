@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Function</title>
+</head>
+<body>
+
+
+    <script>
+
+        //A callback is a function passed as an argument to another function.
+
+        function myPreview(num3) {
+            console.log(num3)
+
+            
+        }
+
+        function myCalculator(num1, num2, myCallback) {
+            let sum = num1 + num2;
+            myCallback(sum);
+            
+        }
+
+        myCalculator(10, 10, myPreview);
+
+    </script>
+    
+</body>
+</html>

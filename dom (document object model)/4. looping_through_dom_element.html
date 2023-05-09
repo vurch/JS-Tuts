@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Trough Dom Element</title>
+</head>
+<body>
+    <ul class="items" >
+        <li class="item">HTML</li>
+        <li class="item">CSS</li>
+        <li class="item">JAVASCRIPT</li>
+    </ul>
+
+    <script>
+
+        let items = document.querySelectorAll(".item");
+        console.log(items);
+
+        //looping through Dom Element using forEach Methods
+        items.forEach((item) => {
+            console.log(item);
+        })
+
+        //looping through Dom Element using for loop
+        for (let index = 0; index < items.length; index++) {
+            console.log(items[index]);
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment and Decrement</title>
+</head>
+<body>
+    <script>
+        //When you use the increment/decrement operator after the operand, the value will be returned before the operand is increased/decreased.
+
+        // Increment
+        let a = 1;
+        console.log(a++);    // 1
+        console.log(a);      // 2
+        // Decrement
+        let b = 1;
+        console.log(b--);    // 1
+        console.log(b);     // 0
+
+
+        //If you’d rather make the variable increment/decrement before returning, you simply have to use the increment/decrement operator before the operand:
+
+        // Increment
+        let x = 1;
+        console.log(++x);    // 2
+        console.log(x);      // 2
+        // Decrement
+        let y = 1;
+        console.log(--y);    // 0
+        console.log(y);      // 0
+    </script>
+</body>
+</html>

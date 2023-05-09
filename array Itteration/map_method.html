@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Methods</title>
+</head>
+<body>
+    <script>
+        //The map() method is a higher-order function in JavaScript that is available on arrays. It is used to transform each element of an array into a new value, based on a provided function, and returns a new array with the transformed values.
+
+        let numbers = [1, 2, 3, 4, 5];
+
+        let squaredNumbers = numbers.map(squaredFunction);
+
+        function squaredFunction(num) {
+            return num * num;
+        }
+
+        console.log(squaredNumbers);
+        
+
+    </script>
+    
+</body>
+</html>

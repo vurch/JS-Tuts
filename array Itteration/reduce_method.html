@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce Methods</title>
+</head>
+<body>
+    <script>
+
+        //The .reduce() method iterates through an array and returns a single value.
+        const numbers = [45, 4, 9, 16, 25];
+
+        //Summing up all elements in an array:
+        const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+        console.log(sum); 
+
+        //Finding the maximum element in an array:
+        const max = numbers.reduce((accumulator, currentValue) => Math.max(accumulator, currentValue));
+        console.log(max);
+
+        // //Flattening a nested array:
+        const nestedArray = [[45, 4], [9, 16], [25]];
+        const flattenedArray = nestedArray.reduce((accumulator, currentValue) => accumulator.concat(currentValue));
+        console.log(flattenedArray);
+        
+
+
+    </script>
+    
+</body>
+</html>

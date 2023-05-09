@@ -10,16 +10,17 @@
 
     <h1>JavaScript Variables</h1>
 
-    <p>In this example, price1, price2, and total are variables.</p>
+    <p>In this example, firstValue, secondValue, and result are variables.</p>
 
-    <p id="demo"></p>
+    <p id="result"></p>
 
     <script>
-    const price1 = 5;
-    const price2 = 6;
-    let total = price1 + price2;
-    document.getElementById("demo").innerHTML =
-    "The total is: " + total;
+        //Const can not be redeclared or updated
+        const firstValue = 100;
+        const secondValue = 50;
+        let result = firstValue + secondValue;
+        document.getElementById("result").innerHTML =
+        "The result is: " + result;
     </script>
     
 </body>

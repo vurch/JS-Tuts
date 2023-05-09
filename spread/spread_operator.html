@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <p id="demo"></p>
+
+    <script>
+        //Spread operator expand an iterable (like an array) into more elements..
+
+        //Example 1
+        const cars1 = ["Saab", "Volvo", ..."BMW"];
+        const cars2 = ["Fiat", "Toyota"];
+
+        const combined = [cars1, ...cars2];
+        document.getElementById("demo").innerHTML = combined; 
+
+
+        //Example 2
+        function sum(x, y, z) {
+            return x + y + z;
+        }
+
+        const numbers = [1, 2, 3];
+
+        console.log(sum(...numbers));
+        // expected output: 6
+    </script>
+    
+</body>
+</html>
